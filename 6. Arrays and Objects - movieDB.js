@@ -21,19 +21,23 @@ var movieDB = [
 
 
 // Using 'for' loop to console.log
+// Nesting the if/else inside a function named "nested1()".
 
-
-for (var i=0; i<movieDB.length; i++) {
+function nested1() {
 	if (movieDB[i].hasWatched === true) {
 		console.log("You have watched \"" + movieDB[i].name + "\" - " + movieDB[i].rating + " stars"); 
 	}
 	else {
 		console.log("You have not seen \"" + movieDB[i].name + "\" - " + movieDB[i].rating + " stars"); 
-	}
+	}	
+}
+
+// Runs the 'for' loop
+for (var i=0; i<movieDB.length; i++) {
+	nested1();
 }
 
 // Using 'forEach' loop to console.log
-
 
 movieDB.forEach(function(names) {
 	var result = "You have ";
@@ -45,6 +49,6 @@ movieDB.forEach(function(names) {
 	}
 	result += "\"" + names.name + "\" - ";
 	result += names.rating + " stars";
-	console.log(result)
+	console.log(result);
 	}
 )
