@@ -20,7 +20,7 @@ var movieDB = [
 ]
 
 
-// Using 'for' loop
+// Using 'for' loop to console.log
 
 
 for (var i=0; i<movieDB.length; i++) {
@@ -32,7 +32,7 @@ for (var i=0; i<movieDB.length; i++) {
 	}
 }
 
-// Using 'forEach' loop
+// Using 'forEach' loop to console.log
 
 
 movieDB.forEach(function(names) {
