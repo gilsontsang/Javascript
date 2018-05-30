@@ -1,0 +1,15 @@
+/* 
+These 2 codes below will fill the screen 
+Ensure body takes up the entire width and height.
+*/
+
+canvas {
+  width: 100%;
+  height: 100%;
+  background: "black";
+}
+
+body, html {
+  height: 100%;
+  margin: 0;
+}
