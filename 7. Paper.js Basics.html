@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Paper.js Basics</title>
+  <!-- Download most recent version paper.js from paperjs.org/download/
+  Paper-full.js script 
+  -->
+  <script type="text/javascript" src="paper-full.js"></script>
+  <!-- To css -->
+  <link rel="stylesheet" type="text/css" href="7. Paper.js Basics.css">
+  <!-- From paper-full.js (paperscript)
+  Canvas is a html element acts as a place that does animation and graphics
+  -->
+  <script type="text/paperscript" canvas="canvas"></script>
+  <!-- Create a Paper.js path to draw a line into it: -->
+  var path = new Path();
+  <!-- Give the stroke a color -->
+  path.strokeCOlor = 'black';
+  var start = new Point(100,100);
+  <!-- Move to start and draw a line from there -->
+  path.moveTo(start);
+  <!-- Note the plus operator on Point objects. PaperScript does that for us, and more! -->
+  path.lineTo(start + [100, -50]);  
+  
+  <!-- Create a circle -->
+  var myCircle = new Path.Circle(new Point(100, 70), 10);
+  myCircle.fillColor = 'black';
+  
+  <!-- Create another circle -->
+  var myCircle2 = new Path.Circle(new Point(50, 50), 300);
+  myCircle2.fillColor = 'purple';
+  
+  
+ 
+</head>
+
+<body>
+  <!-- The only line in the body should refer to canvas when we use canvas -->
+  <canvas id="canvas" resize></canvas>
+</body>
+</html>
